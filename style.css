@@ -1,0 +1,96 @@
+/* 基本复古配色和布局 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', serif;
+}
+
+/* 视频背景部分 */
+.hero {
+    position: relative;
+    height: 100vh;
+    color: #f9f3e4; /* 象牙白文本颜色 */
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.background-video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(50%);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* 深色滤镜 */
+    z-index: 1;
+}
+
+.content {
+    z-index: 2;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #f0d9b5; /* 复古金色 */
+    margin-bottom: 0.5rem;
+}
+
+p {
+    font-size: 1.25rem;
+    color: #f9f3e4;
+    margin-bottom: 1rem;
+}
+
+.cta-button {
+    background-color: #6c5a4d; /* 经典深棕色 */
+    color: #f9f3e4;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+    text-decoration: none;
+}
+
+.cta-button:hover {
+    background-color: #f0d9b5; /* 按钮悬停复古金色 */
+    color: #6c5a4d;
+}
+
+/* 导航栏 */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 10;
+}
+
+.navbar a {
+    color: #f9f3e4;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #f0d9b5;
+}
